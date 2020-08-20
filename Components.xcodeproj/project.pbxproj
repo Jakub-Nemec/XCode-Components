@@ -10,6 +10,9 @@
 		5B8383C5315CABAFCF158CC8 /* Pods_Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A49B4DE447E42A6629083B /* Pods_Components.framework */; };
 		9ED7743A04FBE2E14F4BBCC5 /* Pods_ComponentsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8D0655F684710E8A13E4AF /* Pods_ComponentsUITests.framework */; };
 		E2DC355AAC72D73F5C2A17C8 /* Pods_ComponentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D0AF8189DBFA8979DF1193 /* Pods_ComponentsTests.framework */; };
+		F57D539C24C9A7CA002D3889 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D539B24C9A7CA002D3889 /* ButtonView.swift */; };
+		F57D539E24C9B2F9002D3889 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D539D24C9B2F9002D3889 /* SliderView.swift */; };
+		F57D53A024C9B358002D3889 /* TFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57D539F24C9B358002D3889 /* TFView.swift */; };
 		F5BD91F824C30A7A00CD901B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BD91F724C30A7A00CD901B /* AppDelegate.swift */; };
 		F5BD91FA24C30A7A00CD901B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BD91F924C30A7A00CD901B /* SceneDelegate.swift */; };
 		F5BD91FC24C30A7A00CD901B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BD91FB24C30A7A00CD901B /* ViewController.swift */; };
@@ -47,6 +50,9 @@
 		CD264F028FA3058B772D6267 /* Pods-ComponentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComponentsUITests/Pods-ComponentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E7D0AF8189DBFA8979DF1193 /* Pods_ComponentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComponentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB7F6073DB68C1907259D25 /* Pods-ComponentsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComponentsUITests/Pods-ComponentsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F57D539B24C9A7CA002D3889 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		F57D539D24C9B2F9002D3889 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		F57D539F24C9B358002D3889 /* TFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFView.swift; sourceTree = "<group>"; };
 		F5BD91F424C30A7A00CD901B /* Components.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Components.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BD91F724C30A7A00CD901B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5BD91F924C30A7A00CD901B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +148,9 @@
 				F5BD91F724C30A7A00CD901B /* AppDelegate.swift */,
 				F5BD91F924C30A7A00CD901B /* SceneDelegate.swift */,
 				F5BD91FB24C30A7A00CD901B /* ViewController.swift */,
+				F57D539B24C9A7CA002D3889 /* ButtonView.swift */,
+				F57D539D24C9B2F9002D3889 /* SliderView.swift */,
+				F57D539F24C9B358002D3889 /* TFView.swift */,
 				F5BD91FD24C30A7A00CD901B /* Main.storyboard */,
 				F5BD920024C30A7B00CD901B /* Assets.xcassets */,
 				F5BD920224C30A7B00CD901B /* LaunchScreen.storyboard */,
@@ -175,6 +184,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5BD921E24C30A7B00CD901B /* Build configuration list for PBXNativeTarget "Components" */;
 			buildPhases = (
+				F5BD922724C316D100CD901B /* ShellScript */,
 				F4A193701E8F875D5E61711D /* [CP] Check Pods Manifest.lock */,
 				F5BD91F024C30A7A00CD901B /* Sources */,
 				F5BD91F124C30A7A00CD901B /* Frameworks */,
@@ -371,6 +381,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F5BD922724C316D100CD901B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -380,7 +407,10 @@
 			files = (
 				F5BD91FC24C30A7A00CD901B /* ViewController.swift in Sources */,
 				F5BD91F824C30A7A00CD901B /* AppDelegate.swift in Sources */,
+				F57D539C24C9A7CA002D3889 /* ButtonView.swift in Sources */,
 				F5BD91FA24C30A7A00CD901B /* SceneDelegate.swift in Sources */,
+				F57D53A024C9B358002D3889 /* TFView.swift in Sources */,
+				F57D539E24C9B2F9002D3889 /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

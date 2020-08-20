@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import SnapKit
 
 class TFView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var textFieldView = UIView()
+
+    func setupTFView() {
+        self.addSubview(textFieldView)
+        textFieldView.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(200)
+            make.leading.trailing.equalToSuperview().offset(0)
+            make.bottom.equalToSuperview().offset(0)
+        }
+        textFieldView.backgroundColor = .lightGray
     }
-    */
 
 }

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AC4CF6F0-EE96-4232-8927-587094AED5D4"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46EC1DB9-E89E-49A2-86A1-037A0A281BD1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Components/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "suitDidChange(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "46EC1DB9-E89E-49A2-86A1-037A0A281BD1 - d03d63944cd1ff71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Components.ViewController.suitDidChange(__C.UISegmentedControl) -&gt; ()"
+                  moduleName = "Components"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kroko/Desktop/XCode/Components/Components/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "87">
+               </Location>
+               <Location
+                  uuid = "46EC1DB9-E89E-49A2-86A1-037A0A281BD1 - d03d63944cd1ff71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Components.ViewController.suitDidChange(__C.UISegmentedControl) -&gt; ()"
+                  moduleName = "Components"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kroko/Desktop/XCode/Components/Components/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "46EC1DB9-E89E-49A2-86A1-037A0A281BD1 - d03d63944cd1ff71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Components.ViewController.suitDidChange(__C.UISegmentedControl) -&gt; ()"
+                  moduleName = "Components"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kroko/Desktop/XCode/Components/Components/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "181">
+               </Location>
+               <Location
+                  uuid = "46EC1DB9-E89E-49A2-86A1-037A0A281BD1 - d03d63944cd1ff71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Components.ViewController.suitDidChange(__C.UISegmentedControl) -&gt; ()"
+                  moduleName = "Components"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kroko/Desktop/XCode/Components/Components/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "396">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83E98003-5AD5-4B00-8A9A-57F12DFEAA0B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Components/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "setupSegmentedControl()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "642E48FC-B5E2-450A-9073-F5880F8761DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Components/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "suitDidChange(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

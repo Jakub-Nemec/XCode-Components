@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import SnapKit
 
 class SliderView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var sliderView = UIView()
+
+    func setupSliderView() {
+        self.addSubview(sliderView)
+        sliderView.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(200)
+            make.leading.trailing.equalToSuperview().offset(0)
+            make.bottom.equalToSuperview().offset(0)
+        }
+        sliderView.backgroundColor = .cyan
     }
-    */
 
 }
