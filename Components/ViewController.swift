@@ -126,8 +126,8 @@ class ViewController: UIViewController {
         sliderView.backgroundColor = .orange
     }
 
-    func sliderFunc(_ sender: UISlider) {
-        dataLabel.text = String(Int(sender.value))
+    @objc func sliderFunc(_ sender: UISlider) {
+        dataLabel.text = String(Int(slider.value))
     }
 
     func setupSlider() {
@@ -142,6 +142,7 @@ class ViewController: UIViewController {
         slider.minimumValue = 0
         slider.maximumValue = 100
         slider.value = 50
+        slider.addTarget(self, action: #selector(sliderFunc(_:)), for: .valueChanged)
     }
 
     func setupDataLabel() {
