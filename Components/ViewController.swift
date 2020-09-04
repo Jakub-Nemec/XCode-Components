@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,6 +85,7 @@ class ViewController: UIViewController {
         firstButton.setTitleColor(.black, for: .normal)
         firstButton.contentHorizontalAlignment = .center
         firstButton.isEnabled = false
+        firstButton.isSelected = false
     }
 
     func setupSecondButton() {
@@ -190,6 +191,7 @@ class ViewController: UIViewController {
         }
         firstTextField.backgroundColor = .blue
         firstTextField.textAlignment = .center
+        firstTextField.delegate = self
     }
 
     func setupSecondtFT() {
@@ -202,6 +204,7 @@ class ViewController: UIViewController {
         }
         secondTextField.backgroundColor = .orange
         secondTextField.textAlignment = .center
+        secondTextField.delegate = self
     }
 
     func setupThirdtFT() {
@@ -214,6 +217,7 @@ class ViewController: UIViewController {
         }
         thirdTextField.backgroundColor = .yellow
         thirdTextField.textAlignment = .center
+        thirdTextField.delegate = self
     }
 
 }
